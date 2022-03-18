@@ -69,6 +69,8 @@ class HttpService{
 // parse
 
   static List<CardModel>parseCards(String list){
+    print("++++++++++++++++++++++++++++++++++++++++");
+    print(list);
     List newList=jsonDecode(list);
     List<CardModel>cards=List<CardModel>.from(newList.map((e) => CardModel.fromJson(e)));
     return cards;
