@@ -119,6 +119,7 @@ class _AddPageState extends State<AddPage> {
               ),
               SizedBox(height: 20,),
               TextField(
+                keyboardType: TextInputType.number,
                 controller: phoneController,
                 decoration: InputDecoration(
                     label: Text("Phone Number"),
